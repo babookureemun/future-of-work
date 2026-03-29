@@ -635,10 +635,10 @@ export default function App() {
       {/* Header */}
       <div style={{ padding: "32px 32px 0", marginBottom: 8 }}>
         <div style={{ fontFamily: "'Space Mono', monospace", fontSize: 10, color: "#444", letterSpacing: 3, marginBottom: 8 }}>POWERED BY CLAUDE AI</div>
-        <h1 style={{ fontSize: "clamp(24px, 4vw, 42px)", fontWeight: 800, margin: 0, background: "linear-gradient(135deg, #ffffff 0%, #888 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", lineHeight: 1.1 }}>
+        <h1 style={{ fontSize: "clamp(32px, 5vw, 56px)", fontWeight: 800, margin: 0, background: "linear-gradient(135deg, #ffffff 0%, #888 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", lineHeight: 1.1 }}>
           Future of Work
         </h1>
-        <div style={{ fontSize: 14, color: "#555", marginTop: 6 }}>Six AI-powered tools for the workplace of tomorrow</div>
+        <div style={{ fontSize: 17, color: "#555", marginTop: 6 }}>Six AI-powered tools for the workplace of tomorrow</div>
       </div>
 
       {/* Tab Nav */}
@@ -653,7 +653,7 @@ export default function App() {
               border: activeTab === t.id ? `1px solid ${t.color}66` : "1px solid rgba(255,255,255,0.06)",
               background: activeTab === t.id ? `${t.color}18` : "rgba(255,255,255,0.02)",
               color: activeTab === t.id ? t.color : "#666",
-              fontSize: 12,
+              fontSize: 14,
               fontWeight: 600,
               cursor: "pointer",
               transition: "all 0.2s",
@@ -671,7 +671,7 @@ export default function App() {
       {/* Main Content */}
       <div style={{ padding: "20px 32px 0", animation: "fadeIn 0.3s ease" }} key={activeTab}>
         <div style={{ marginBottom: 6, display: "flex", alignItems: "baseline", gap: 10 }}>
-          <span style={{ fontSize: 22, fontWeight: 700, color: "#fff" }}>{tool.icon} {tool.label}</span>
+          <span style={{ fontSize: 28, fontWeight: 700, color: "#fff" }}>{tool.icon} {tool.label}</span>
           <span style={{ fontSize: 13, color: "#555" }}>{tool.tagline}</span>
         </div>
 
