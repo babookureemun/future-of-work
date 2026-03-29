@@ -16,19 +16,3 @@ export default async function handler(req, res) {
   const data = await response.json();
   res.status(response.status).json(data);
 }
-```
-3. Press **Ctrl + S** to save
-
----
-
-**Step 3 — Update the API URL in App.jsx**
-
-1. Open `src/App.jsx` in Notepad
-2. Press **Ctrl + H** to open Find & Replace
-3. In **Find** box paste:
-```
-https://api.anthropic.com/v1/messages
-```
-4. In **Replace** box paste:
-```
-/api/claude
